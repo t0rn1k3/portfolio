@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    background-color: #04293A;
+    overflow-x: hidden;
+}
+.container {
+    background-color: #3E497A;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+}
+.btn {
+    height: 5.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: transparent;
+    border: 0;
+}
+.btn svg {
+    width: 3rem;
+    height: 50%;
+    fill: #fff;
+    cursor: pointer;
+}
+#open {
+    left: 60%;
+}
+#close {
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+.container.show-nav {
+    transform: rotate(-25deg);
+}
+.container.container.show-nav .circle {
+    transform: rotate(-70deg);
+}
+.container.show-nav + nav li {
+    transform: translateX(0);
+    transition-delay: 0.2s;
+}
+.conainer_circle {
+    position: fixed;
+    top: -8rem;
+    left: -8rem;
+}
+.circle {
+    width: 16rem;
+    height: 16rem;
+    background-color: #21325E;
+    border-radius: 50%;
+    transition: transform 0.5s linear;
+    position: fixed;
+}
+nav {
+    width: 10rem;
+    position: fixed;
+    bottom: 7rem;
+    left: 1.7rem;
+}
+nav span {
+    width: 80%;
+}
+nav ul li {
+    text-transform: capitalize;
+    transform: translate(-100%);
+    transition: transform 0.4s ease-in;
+}
+nav ul li + li {
+    margin-left: 1.2rem;
+    transform: translate(-150%);
+}
+nav ul li + li + li {
+    margin-left: 2.4rem;
+    transform: translate(-200%);
+}
+nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 8px 0;
+}
+nav ul svg {
+    width: 1rem;
+    fill: white;
+}
+
+/* //content */
+
+/* .main_content {
+    width: 60%;
+    margin: auto;
+} */
+.info {
+    width: 35rem;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    width: 100%;
+    font-family: 'Elsie';
+    display: flex;
+    flex-direction: column;
+    font-size: 3.5rem;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 8px;
+    border-bottom: 0;
+    box-shadow: 0px 7px 7px;
+    background-color: #F0F0F0;
+    z-index: 100;
+}
+.info p {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 15px 15px;
+    border-top: 0;
+    padding: 20px;
+    transform: translateY(-10px);
+    background-color: #F0F0F0;
+}
+.open-tag {
+    font-family: 'Caveat';
+    font-style: italic;
+    font-size: 1.2rem;
+}
+.close-tag {
+    font-size: 1.2rem;
+    font-style: italic;
+    font-family: 'Caveat';
+}
+.padding {
+    padding-left: 2rem;
+}
+.info p .front-end {
+    font-family: 'Elsie';
+    font-size: 1.5rem;
+    font-style: italic;
+}
+.start-typing {
+    width: 0.5rem;
+    height: 1.5rem;
+    background-color: #fff;
+    animation-name: typing;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    display: flex;
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+
+@keyframes typing {
+    0%{background-color: white;}
+    100%{background-color: transparent;}
+}
+.typing-text {
+    width: 100%;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+}
+#typing {
+    align-self: flex-start;
+    font-size: 1.3rem;
+    font-family: 'Elsie';
+    color: white;
+    padding: 12px 0 0 10px;
+}
+
+
+/* //about page */
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;  
+}
+.card-container {
+    width: 70%;
+    display: flex;
+    /* justify-content: center; */
+}
+.card1 {
+    background-image: url('../images/mipove.png');
+    position: relative;
+}
+.card2 {
+    background-image: url('../images/cosimo.png');
+    position: relative;
+}
+.card3 {
+    background-image: url('../images/HangMan.png');
+    position: relative;
+}
+.card4 {
+    background-image: url('../images/BreakOut.png');
+    position: relative;
+}
+.card5 {
+    background-image: url('../images/newYear.png');
+    position: relative;
+}
+.cards {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    flex: 0.5;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: flex 0.7s ease-in;
+}
+.cards a {
+    padding: 15px;
+    text-decoration: none;
+    border: 1px solid #21325E;
+    border-radius: 10px;
+    background-color: #04293A;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: 'Elsie';
+    box-shadow: 2px 2px 2px;
+    visibility: hidden;
+    z-index: 100;
+}
+.background  {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    border-radius: 50px;
+}
+.cards.active {
+    flex: 15;
+}
+.cards.active a {
+    visibility: visible;
+}
+
+
+/* // contact page */
+
+.main-contact {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.document-info {
+    width: 35rem;
+    /* height: 20rem; */
+    padding: 15px 0;
+    border: 1px solid black;
+    box-shadow: 0 0 30px;
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile{
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    fill: black;
+}
+.contact-info {
+    color: black;
+    font-size: 1.3rem;
+    padding: 18px;
+    font-family: 'Elsie';
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.under {
+    text-decoration: underline;
+    cursor: pointer;
+    color: black;
+    outline: none;
+}
+.resume {
+    width: 10rem;
+    height: 3rem;
+    padding: 15px;
+    font-family: 'Elsie';
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #21325E;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+.resume:hover {
+    box-shadow: 5px 5px 5px black;
+}
+.arrow {
+    transform: rotate(90deg);
+    width: 0.8rem;
+    fill: white;
+    margin-left: 7px;
+}
+

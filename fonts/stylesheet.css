@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Caveat';
+    src: url('Caveat-Regular.eot');
+    src: url('Caveat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Caveat-Regular.woff2') format('woff2'),
+        url('Caveat-Regular.woff') format('woff'),
+        url('Caveat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Elsie';
+    src: url('Elsie-Regular.eot');
+    src: url('Elsie-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Elsie-Regular.woff2') format('woff2'),
+        url('Elsie-Regular.woff') format('woff'),
+        url('Elsie-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

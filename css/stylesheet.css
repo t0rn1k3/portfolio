@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Caveat';
+    src: url('../fonts/Caveat-Regular.eot');
+    src: url('Caveat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Caveat-Regular.woff2') format('woff2'),
+        url('../fonts/Caveat-Regular.woff') format('woff'),
+        url('../fonts/Caveat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Elsie';
+    src: url('../fonts/Elsie-Regular.eot');
+    src: url('Elsie-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Elsie-Regular.woff2') format('woff2'),
+        url('../fonts/Elsie-Regular.woff') format('woff'),
+        url('../fonts/Elsie-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

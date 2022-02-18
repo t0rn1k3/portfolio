@@ -1,0 +1,168 @@
+@media screen and (max-width: 900px) {
+    .info {
+        width: 32rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    #typing {
+        font-size: 1.2rem;
+    }
+      /* //about page */
+    
+    .card-container {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 790px) {
+    .info {
+        width: 80%;
+    }
+
+    /* // contact page */
+    .document-info {
+        width: 30rem;
+    }
+
+       /* //about page */
+    .card-container {
+        width: 90%;
+        margin-top: 6rem;
+    }
+    .cards {
+        margin: 5px;
+    }
+}
+@media screen and (max-width: 630px) {
+    h2 {
+        font-size: 2.5rem;
+    }
+    #typing {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
+
+    /* //about page */
+    .card-container {
+        width: 70%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .cards {
+        width: 15rem;
+        height: 15rem;
+        margin: 35px;
+    }
+    .cards:nth-of-type(5) {
+        display: none;
+    }
+
+    /* // contact page */
+    .document-info {
+        width: 27rem;
+    }
+    .profile {
+        width: 4rem;
+        height: 4rem;
+        top: 2rem;
+        right: 2.2rem;
+    }
+    .contact-info {
+        font-size: 1.1rem;
+    }
+    .resume {
+        width: 8rem;
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .info {
+        width: 90%;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .info p .front-end{
+        font-size: 1.2rem;
+    }
+    /* // about page */
+
+    .card-container {
+        width: 80%;
+    }
+    .cards a {
+        font-size: 1rem;
+    }
+
+     /* // contact page */
+    .document-info {
+        width: 23rem;
+    }
+    .contact-info {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+    .resume {
+        width: 7rem;
+        height: 2rem;
+        font-size: 0.6rem;
+    }
+    .arrow {
+        width: 0.6rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    #typing {
+        font-size: 0.6rem;
+    }
+      /* // about page */
+
+      .card-container {
+        width: 90%;
+    }
+    /* //conatct page */
+    .document-info {
+        width: 20rem;
+        height: 24rem;
+    }
+    .contact-info {
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 370px) {
+    h2 {
+        font-size: 1.6rem;
+    }
+    .info p .front-end{
+        font-size: 1rem;
+    }
+    #typing {
+        font-size: 0.5rem;
+    }
+
+       /* // about page */
+    .card-container {
+        width: 100%;
+    }
+    .cards a {
+        font-size: 0.8rem;
+    }
+      /* //conatct page */
+      .document-info {
+        width: 17rem;
+    }
+    .contact-info {
+        padding: 25px 5px;
+        /* background-color: red; */
+    }
+    .profile {
+        width: 3rem;
+        top: 2.5rem;
+        right: 1.8rem;
+    }
+}
+    
+
+
+   
