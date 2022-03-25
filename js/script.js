@@ -2,6 +2,10 @@ const open = document.getElementById('open');
 const close = document.getElementById('close');
 const cont = document.querySelector('.container');
 const type = document.getElementById('typing');
+const main = document.querySelector('.main');
+const arrow = document.getElementById('arrowMore');
+const more = document.querySelector('.more-works');
+const less = document.getElementById('less');
 
 
 
@@ -59,8 +63,21 @@ window.addEventListener('load', ()=> {
 })
 
 
+// see more works 
 
-
-
-
-
+arrow.addEventListener('click', ()=> {
+    
+    if (more.style.width == '100%') {
+        main.style.width = '100%';
+        main.style.overflow = 'visible';
+        more.style.width = 0;
+        more.style.overflow = 'hidden';
+        arrow.style.transform = 'rotate(360deg)';
+    }else {
+        main.style.width = 0;
+        main.style.overflow = 'hidden';
+        more.style.width = '100%';
+        more.style.overflow = 'visible';
+        arrow.style.transform = 'rotate(180deg)';
+    }
+});
