@@ -143,9 +143,9 @@ const projects = [
         'image': '../images/mipove.png'
     },
     {
-        'project': 'cosimo',
-        'link': 'https://t0rn1k3.github.io/cosimospizza/' ,
-        'image': '../images/cosimo.png'
+        'project': 'movie app',
+        'link': 'https://allmovies-app-api.netlify.app/' ,
+        'image': '../images/movieapp.png'
     },
     {
         'project': 'music player',
