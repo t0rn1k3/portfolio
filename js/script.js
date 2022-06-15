@@ -138,9 +138,9 @@ const proj = document.getElementById('projects');
 
 const projects = [
     {
-        'project': 'mipove.ge',
-        'link': 'https://t0rn1k3.github.io/Mipove.ge/' ,
-        'image': '../images/mipove.png'
+        'project': 'redberry',
+        'link': 'https://t0rn1k3.github.io/redberry/' ,
+        'image': '../images/redberry.png'
     },
     {
         'project': 'movie app',
